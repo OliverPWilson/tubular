@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     -webkit-user-select: none;
+    -ms-content-zooming: none;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    overflow: hidden;
 }
 
 *:focus {
