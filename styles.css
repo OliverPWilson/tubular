@@ -118,7 +118,7 @@ body {
     float: right;
 }
 
-.line:hover .details{
+.line:focus .details{
     max-height: 200px;
     padding-top: 15px;
 }
