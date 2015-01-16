@@ -4,6 +4,7 @@
     <title>Tubular</title>
     <meta charset="UTF-8">
     <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="-ms-touch-action" content="none"/>
     <meta name="viewport" content="width=400, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css">
@@ -12,6 +13,8 @@
     document.getElementById("bakerloo-status").innerHTML = "Severe Delays";
     document.getElementById("bakerloo-details").innerHTML = "Minor delays Barking to Upminster while we fix a signal failure at Upminster. GOOD SERVICE on the rest of the line.";
     document.getElementById("district-details").innerHTML = "Scheduled engineering work between Earl's Court Olympia and Rayner's Lane.";
+    document.getElementById("bakerloo-line-alert").innerHTML = "!";
+    document.getElementById("district-line-alert").innerHTML = "!";
     }
     </script>
     <script src="tubular. js"></script>
@@ -26,66 +29,77 @@
     </div>
     <div class="lines-wrapper">
         <div tabindex="0" class="bakerloo line">Bakerloo
+            <span class="line-alert" id="bakerloo-line-alert"></span>
             <div class="bakerloo details">
                 <span class="line-status" id="bakerloo-status"></span>
                 <span class="line-details" id="bakerloo-details"></span>
             </div>
         </div>
         <div tabindex="0" class="central line">Central
+            <span class="line-alert" id="central-line-alert"></span>
             <div class="central details">
                 <span class="line-status" id="central-status">Good Service</span>
                 <span class="line-details" id="central-details"></span>
             </div>
         </div>
         <div tabindex="0" class="circle line">Circle
+            <span class="line-alert" id="circle-line-alert"></span>
             <div class="circle details">
                 <span class="line-status" id="circle-status">Good Service</span>
                 <span class="line-details" id="circle-details"></span>
             </div>
         </div>
         <div tabindex="0" class="district line">District
+            <span class="line-alert" id="district-line-alert"></span>
             <div class="district details">
                 <span class="line-status" id="district-status">Good Service</span>
                 <span class="line-details" id="district-details"></span>
             </div>
         </div>
         <div tabindex="0" class="hammersmith-city line">Hammersmith & City
+            <span class="line-alert" id="hammersmith-city-line-alert"></span>
             <div class="hammersmith-city details">
                 <span class="line-status" id="hammersmith-city-status">Good Service</span>
                 <span class="line-details" id="hammersmith-city-details"></span>
             </div>
         </div>
         <div tabindex="0" class="jubilee line">Jubilee
+            <span class="line-alert" id="jubilee-line-alert"></span>
             <div class="jubilee details">
                 <span class="line-status" id="jubilee-status">Good Service</span>
                 <span class="line-details" id="jubilee-details"></span>
             </div>
         </div>
         <div tabindex="0" class="metropolitan line">Metropolitan
+            <span class="line-alert" id="metropolitan-line-alert"></span>
             <div class="metropolitan details">
                 <span class="line-status" id="metropolitan-status">Good Service</span>
                 <span class="line-details" id="metropolitan-details"></span>
             </div>
         </div>
         <div tabindex="0" class="northern line">Northern
+            <span class="line-alert" id="northern-line-alert"></span>
             <div class="northern details">
                 <span class="line-status" id="northern-status">Good Service</span>
                 <span class="line-details" id="northern-details"></span>
             </div>
         </div>
         <div tabindex="0" class="piccadilly line">Piccadilly
+            <span class="line-alert" id="piccadilly-line-alert"></span>
             <div class="piccadilly details">
                 <span class="line-status" id="piccadilly-status">Good Service</span>
                 <span class="line-details" id="piccadilly-details"></span>
             </div>
         </div>
         <div tabindex="0" class="victoria line">Victoria
+            <span class="line-alert" id="victoria-line-alert"></span>
             <div class="victoria details">
                 <span class="line-status" id="victoria-status">Good Service</span>
                 <span class="line-details" id="victoria-details"></span>
             </div>
         </div>
         <div tabindex="0" class="waterloo-city line">Waterloo & City
+            <span class="line-alert" id="waterloo-city-line-alert"></span>
             <div class="waterloo-city details">
                 <span class="line-status" id="waterloo-city-status">Good Service</span>
                 <span class="line-details" id="waterloo-city-details"></span>
